@@ -33,9 +33,9 @@ body {
 }
 
 @media(min-width:768px) {
-    #wrapper {
+    /*#wrapper {
         padding-left: 225px;
-    }
+    }*/
 
     #page-wrapper {
         padding: 10px;
@@ -137,6 +137,19 @@ ul.alert-dropdown {
         outline: none;
         background-color: #000 !important;
     }
+}
+
+@media(max-width: 1230px) {
+    .tabbable {
+        display: none;
+    }
+}
+
+@media(max-width: 768px) {
+    .tabbable {
+        display: none;
+    }
+    
 }
 
 .side-nav>li>ul {
