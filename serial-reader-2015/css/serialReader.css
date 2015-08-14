@@ -1,4 +1,26 @@
-.clock {
+.center {
+   position: absolute;
+   left: 50%;
+   margin-right: -50%;
+   transform: translate(-50%, -0%)
+}
+
+.clock1 {
 	zoom: 0.5;
-	-moz-transform: scale(0.5)
+	-moz-transform: scale(0.5);
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: -17%;
+    margin-right: -50%;
+}
+
+.clock2 {
+	zoom: 0.5;
+	-moz-transform: scale(0.5);
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: -17%;
+    margin-right: -50%;
 }

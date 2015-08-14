@@ -303,8 +303,10 @@ $(document).ready(function(){
             });
     });
 
-    clock = new FlipClock($('.clock'), 100000, {
-                clockFace: 'Counter'
+    clock = new FlipClock($('.clock1'), 000000, {
+                clockFace: 'Counter',
+                minimumDigits: '6',
+                autoStart: 'true'
             });
 
     // Attach a click event to a button a increment the clock
@@ -329,4 +331,34 @@ $(document).ready(function(){
         clock.reset();
     });
 
+    clock = new FlipClock($('.clock2'), 000000, {
+                clockFace: 'Counter',
+                minimumDigits: '6',
+                autoStart: 'true'
+            });
+
+    // Attach a click event to a button a increment the clock
+    $('.increment').click(function() {
+        //clock.setValue(10);
+
+        // Or you could decrease the clock
+        // clock.decrement();
+
+        clock.increment();
+
+        // Or set it to a specific value
+        // clock.setValue(x);
+    });
+
+    // Attach a click event to a button a decrement the clock
+    $('.decrement').click(function() {
+        clock.decrement();
+    });
+
+    $('.reset').click(function() {
+        clock.reset();
+    });
+
+
 });
+
