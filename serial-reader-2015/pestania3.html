@@ -14,9 +14,6 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!--Flip Clock CSS -->
-    <link rel="stylesheet" href="/js/FlipClock-master/compiled/flipclock.css">
-
     <!-- Custom CSS -->
     <link href="css/sb-admin.css" rel="stylesheet">
 
@@ -26,12 +23,8 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <!-- Serial Reader CSS-->
-    <link href="css/serialReader.css" rel="stylesheet">
-
     <script src="js/jquery.js"></script>
-    <script src="js/FlipClock-master/compiled/flipclock.js"></script> 
-    <script src="js/graficos.js"></script>
+    <script type="text/javascript" src="js/graficos.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -229,49 +222,25 @@
                 <!-- /.row -->
 
                <div class="row">
-                    <!-Gráfico Gauge 1->
+                    <!-Gráfico->
                     <div class="col-lg-6">
                         <div class="panel panel-primary">
                             <div class="panel-heading">
                                 <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Gráfico de Área HC</h3>
                             </div>
                             <div class="panel-body">
-                                <div id="gauge1" style="min-width: 310px; max-width: 400px; height: 185px; margin: 0 auto"></div>
+                                <div id="container" style="min-width: 310px; height: 300px; margin: 0 auto"></div>
                             </div>
                         </div>
                     </div>
-                    <!-Gráfico Gauge 2->
-                    <div class="col-lg-6">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Gráfico de Área HC</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div id="gauge2" style="min-width: 310px; max-width: 400px; height: 185px; margin: 0 auto"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-Contador 1->
+                    <!-Clima->
                     <div class="col-lg-6">
                         <div class="panel panel-yellow">
                             <div class="panel-heading">
                                 <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Clima</h3>
                             </div>
                             <div class="panel-body">
-                                <div class="clock"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-Contador 2->
-                    <div class="col-lg-6">
-                        <div class="panel panel-yellow">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Clima</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div class="clock"></div>
+
                             </div>
                         </div>
                     </div>
@@ -453,8 +422,6 @@
 
     <script src="js/highcharts4.1.6/js/highcharts.js"></script>
     <script src="js/highcharts4.1.6/js/modules/exporting.js"></script>
-    <script src="js/highcharts4.1.6/js/highcharts-more.js"></script>
-
 </body>
 
 </html>
