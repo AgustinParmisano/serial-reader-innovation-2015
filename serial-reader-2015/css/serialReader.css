@@ -24,3 +24,92 @@
     left: -17%;
     margin-right: -50%;
 }
+
+.sider-slider-left a i{
+  display: none;
+}
+
+.sider-slider-right a i{
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        background-color: white;
+    }
+
+    .sider-slider-left a{
+      float: left;
+      height: 140%;
+      width: 2%;
+      background-color: grey;
+      display: inline-block;
+      position: absolute;
+      margin-top: -10%;
+      z-index: 1000;
+      opacity: 0.2;
+      filter: alpha(opacity=20); /* For IE8 and earlier */
+      text-decoration: none;
+    }
+
+    .sider-slider-left:hover a{
+      float: left;
+      height: 140%;
+      width: 8%;
+      background-color: darkgrey;
+      display: inline-block;
+      position: absolute;
+      margin-top: -10%;
+      z-index: 1000;
+      opacity: 0.8;
+      filter: alpha(opacity=80); /* For IE8 and earlier */
+      -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+      transition: width 0.2s;
+    }
+
+    .sider-slider-right a{
+      float: right;
+      height: 140%;
+      width: 2%;
+      background-color: grey;
+      display: inline-block;
+      position: absolute;
+      margin-top: -10%;
+      right: 0%;
+      z-index: 1000;
+      opacity: 0.2;
+      filter: alpha(opacity=20); /* For IE8 and earlier */
+      text-decoration: none;
+    }
+
+    .sider-slider-right:hover a{
+      float: r;
+      height: 140%;
+      width: 8%;
+      background-color: darkgrey;
+      display: inline-block;
+      position: absolute;
+      margin-top: -10%;
+      z-index: 1000;
+      opacity: 0.8;
+      filter: alpha(opacity=80); /* For IE8 and earlier */
+      transition: width 0.2s;
+    }
+
+  .sider-slider-left:hover a i{ 
+      width: 10em;
+      margin: 50%;
+      margin-left: 20%;
+      display: inline;
+      position:relative;
+      top: calc(50% - 10px); /* 50% - 3/4 of icon height */
+  }
+
+  .sider-slider-right:hover a i{
+      width: 10em;
+      margin: 50%;
+      margin-left: 20%;
+      display: inline;
+      position:relative;
+      top: calc(50% - 10px); /* 50% - 3/4 of icon height */
+  }
