@@ -9,20 +9,21 @@
 	zoom: 0.5;
 	-moz-transform: scale(0.5);
 	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    left: -17%;
-    margin-right: -50%;
+  margin-left: auto;
+  margin-right: auto;
+  left: -17%;
+  margin-right: -50%;
 }
 
 .clock2 {
 	zoom: 0.5;
 	-moz-transform: scale(0.5);
 	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    left: -17%;
-    margin-right: -50%;
+  /*margin-left: auto;
+  margin-right: auto;
+  left: -17%;
+  margin-right: -50%;*/
+  padding-left: 32em;
 }
 
 .sider-slider-left a i{
@@ -32,6 +33,28 @@
 .sider-slider-right a i{
   display: none;
 }
+
+.ayuda-pesta{
+  color: white;
+  text-decoration: none;
+}
+
+.ayuda-pesta:hover h3{
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.ayuda-pesta:hover a{
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.titulo-pesta {
+  display: none;
+}
+
 
 @media screen and (max-width: 800px) {
     body {
@@ -112,4 +135,12 @@
       display: inline;
       position:relative;
       top: calc(50% - 10px); /* 50% - 3/4 of icon height */
+  }
+
+  .titulo-pesta {
+    display:  inline;
+    color: #9d9d9d;
+    margin-top: 11px;
+    right: 40%;
+    position: fixed;
   }

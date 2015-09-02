@@ -14,6 +14,9 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!--Flip Clock CSS -->
+    <link rel="stylesheet" href="./js/FlipClock-master/compiled/flipclock.css">
+
     <!-- Custom CSS -->
     <link href="css/sb-admin.css" rel="stylesheet">
 
@@ -23,8 +26,12 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <script src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/graficos.js"></script>
+    <!-- Serial Reader CSS-->
+    <link href="css/serialReader.css" rel="stylesheet">
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/FlipClock-master/compiled/flipclock.js"></script> 
+    <script src="./js/graficosPestaña1.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,7 +44,15 @@
 
 <body>
 
+    <div class="sider-slider-left">
+        <a href="pestania3.html"><i class="fa fa-angle-double-left fa-4x"></i></a>
+    </div>
+    <div class="sider-slider-right">
+        <a href="pestania5.html"><i class="fa fa-angle-double-right fa-4x"></i></a>
+    </div>
+
     <div id="wrapper">
+
 
         <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -50,6 +65,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html">Panel de Control</a>
+                <h3 class="titulo-pesta">Pestaña 4</h3>
             </div>
             <!-- Top Menu Items -->
             <!--<ul class="nav navbar-right top-nav">
@@ -160,7 +176,7 @@
             <div class="tabbable">
                 <!--<ul class="nav navbar-nav side-nav">-->
                 <ul class="nav navbar-nav ">
-                    <li class="active">
+                    <li>
                         <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Pestaña 1</a>
                     </li>
                     <li>
@@ -169,14 +185,11 @@
                     <li>
                         <a href="pestania3.html"><i class="fa fa-fw fa-table"></i> Pestaña 3</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="pestania4.html"><i class="fa fa-fw fa-edit"></i> Pestaña 4</a>
                     </li>
                     <li>
-                        <a href="pestania5.html"><i class="fa fa-fw fa-desktop"></i> Pestaña 5</a>
-                    </li>
-                    <li>
-                        <a href="pestania6.html"><i class="fa fa-fw fa-wrench"></i> Pestaña 6</a>
+                        <a href="pestania5.html"><i class="fa fa-fw fa-desktop"></i> Ayuda</a>
                     </li>
                     <!--<li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
@@ -189,9 +202,6 @@
                             </li>
                         </ul>
                     </li>-->
-                    <li>
-                        <a href="index.html"><i class="fa fa-fw fa-file"></i> Pestaña 7</a>
-                    </li>
                     <!--<li>
                         <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
                     </li>-->
@@ -199,6 +209,7 @@
             </div>
             <!-- /.navbar-collapse -->
         </nav>
+
         <div id="page-wrapper">
 
             <div class="container-fluid">
@@ -222,25 +233,49 @@
                 <!-- /.row -->
 
                <div class="row">
-                    <!-Gráfico->
+                    <!-Gráfico Gauge 1->
                     <div class="col-lg-6">
                         <div class="panel panel-primary">
                             <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Gráfico de Área HC</h3>
+                                <h3 class="panel-title"><i class="fa fa-tachometer"></i> Potencia</h3>
                             </div>
                             <div class="panel-body">
-                                <div id="container" style="min-width: 310px; height: 300px; margin: 0 auto"></div>
+                                <div id="gauge1" style="min-width: 310px; max-width: 400px; height: 185px; margin: 0 auto"></div>
                             </div>
                         </div>
                     </div>
-                    <!-Clima->
+                    <!-Gráfico Gauge 2->
+                    <div class="col-lg-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-tachometer"></i> Corriente</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="gauge2" style="min-width: 310px; max-width: 400px; height: 185px; margin: 0 auto"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-Contador 1->
                     <div class="col-lg-6">
                         <div class="panel panel-yellow">
                             <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Clima</h3>
+                                <h3 class="panel-title"><i class="fa fa-bolt"></i> Acumulador del día</h3>
                             </div>
                             <div class="panel-body">
-
+                                <div class="clock1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-Contador 2->
+                    <div class="col-lg-6">
+                        <div class="panel panel-yellow">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bolt"></i> Acumulador Total</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="clock2"></div>
                             </div>
                         </div>
                     </div>
@@ -422,6 +457,8 @@
 
     <script src="js/highcharts4.1.6/js/highcharts.js"></script>
     <script src="js/highcharts4.1.6/js/modules/exporting.js"></script>
+    <script src="js/highcharts4.1.6/js/highcharts-more.js"></script>
+
 </body>
 
 </html>

@@ -20,11 +20,13 @@
     <!-- Morris Charts CSS -->
     <link href="css/plugins/morris.css" rel="stylesheet">
 
+    <!-- Serial Reader CSS-->
+    <link href="css/serialReader.css" rel="stylesheet">
+
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <script src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/graficos.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,6 +38,13 @@
 </head>
 
 <body>
+
+    <div class="sider-slider-left">
+        <a href="pestania4.html"><i class="fa fa-angle-double-left fa-4x"></i></a>
+    </div>
+    <div class="sider-slider-right">
+        <a href="index.html"><i class="fa fa-angle-double-right fa-4x"></i></a>
+    </div>
 
     <div id="wrapper">
 
@@ -50,6 +59,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html">Panel de Control</a>
+                <h3 class="titulo-pesta">Ayuda</h3>
             </div>
             <!-- Top Menu Items -->
             <!--<ul class="nav navbar-right top-nav">
@@ -160,7 +170,7 @@
             <div class="tabbable">
                 <!--<ul class="nav navbar-nav side-nav">-->
                 <ul class="nav navbar-nav ">
-                    <li class="active">
+                    <li>
                         <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Pestaña 1</a>
                     </li>
                     <li>
@@ -172,11 +182,8 @@
                     <li>
                         <a href="pestania4.html"><i class="fa fa-fw fa-edit"></i> Pestaña 4</a>
                     </li>
-                    <li>
-                        <a href="pestania5.html"><i class="fa fa-fw fa-desktop"></i> Pestaña 5</a>
-                    </li>
-                    <li>
-                        <a href="pestania6.html"><i class="fa fa-fw fa-wrench"></i> Pestaña 6</a>
+                    <li class="active">
+                        <a href="pestania5.html"><i class="fa fa-fw fa-desktop"></i> Ayuda</a>
                     </li>
                     <!--<li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
@@ -189,9 +196,6 @@
                             </li>
                         </ul>
                     </li>-->
-                    <li>
-                        <a href="index.html"><i class="fa fa-fw fa-file"></i> Pestaña 7</a>
-                    </li>
                     <!--<li>
                         <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
                     </li>-->
@@ -226,10 +230,22 @@
                     <div class="col-lg-6">
                         <div class="panel panel-primary">
                             <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Gráfico de Área HC</h3>
+                                <a class="ayuda-pesta" href="index.html"><h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Pestaña 1</h3></a>
                             </div>
                             <div class="panel-body">
-                                <div id="container" style="min-width: 310px; height: 300px; margin: 0 auto"></div>
+                                <div id="container" style="min-width: 310px; height: 200px; margin: 0 auto">
+                                    <h3>La pestaña 1 contiene 2 gráficos de tipo velocímetro que nos indican la Potencia y la Corriente actuales obtenidas del Inversor respectivamente.</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-green">
+                            <div class="panel-heading">
+                                <a class="ayuda-pesta" href="pestania3.html"><h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Pestaña 3</h3></a>
+                            </div>
+                            <div class="panel-body">
+                                <div id="container" style="min-width: 310px; height: 190px; margin: 0 auto">
+                                    <h3>La pestaña 2 contiene un gráfico que indica la temperatura y la humedad sensada por la estación meteorológica por hora. También permite graficar los mismos parámetros en una fecha determinada.</h3>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -237,10 +253,22 @@
                     <div class="col-lg-6">
                         <div class="panel panel-yellow">
                             <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Clima</h3>
+                                <a class="ayuda-pesta" href="pestania2.html"><h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Pestaña 2</h3></a>
                             </div>
                             <div class="panel-body">
-
+                                <div id="container" style="min-width: 310px; height: 200px; margin: 0 auto">
+                                    <h3>La pestaña 2 contiene un gráfico que indica la temperatura del inversor y la energía fotovoltáica obtenida por hora. También permite graficar los mismos parámetros en una fecha determinada.</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-red">
+                            <div class="panel-heading">
+                                <a class="ayuda-pesta" href="pestania4.html"><h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Pestaña 4</h3></a>
+                            </div>
+                            <div class="panel-body">
+                                <div id="container" style="min-width: 310px; height: 190px; margin: 0 auto">
+                                    <h3>La pestaña 4 contiene un gráfico comparativo de la energía fotovoltáica obtenida en el día o en una fecha determinada y sus equivalencias en dióxido de carbono necesario para generarla y su potencialidad para alimentar viviendas.</h3>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -23,6 +23,9 @@
     <!-- DatePicker CSS -->
     <link rel="stylesheet" href="js/datepicker/css/datepicker.css">
 
+    <!-- Serial Reader CSS-->
+    <link href="css/serialReader.css" rel="stylesheet">
+
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -41,6 +44,13 @@
 
 <body>
 
+    <div class="sider-slider-left">
+        <a href="index.html"><i class="fa fa-angle-double-left fa-4x"></i></a>
+    </div>
+    <div class="sider-slider-right">
+        <a href="pestania3.html"><i class="fa fa-angle-double-right fa-4x"></i></a>
+    </div>
+
     <div id="wrapper">
 
         <!-- Navigation -->
@@ -54,6 +64,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html">Panel de Control</a>
+                <h3 class="titulo-pesta">Pestaña 2</h3>
             </div>
             <!-- Top Menu Items -->
             <!--<ul class="nav navbar-right top-nav">
@@ -177,10 +188,7 @@
                         <a href="pestania4.html"><i class="fa fa-fw fa-edit"></i> Pestaña 4</a>
                     </li>
                     <li>
-                        <a href="pestania5.html"><i class="fa fa-fw fa-desktop"></i> Pestaña 5</a>
-                    </li>
-                    <li>
-                        <a href="pestania6.html"><i class="fa fa-fw fa-wrench"></i> Pestaña 6</a>
+                        <a href="pestania5.html"><i class="fa fa-fw fa-desktop"></i> Ayuda</a>
                     </li>
                     <!--<li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
@@ -193,9 +201,6 @@
                             </li>
                         </ul>
                     </li>-->
-                    <li>
-                        <a href="index.html"><i class="fa fa-fw fa-file"></i> Pestaña 7</a>
-                    </li>
                     <!--<li>
                         <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
                     </li>-->
@@ -246,6 +251,16 @@
                             <div class="panel-body">
                                 <div class="input-append date" id="datepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
                                     <input  type="text" placeholder="click to show datepicker"  id="example1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-red">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-calendar"></i> Energía Fotovoltáica Obtenida según la fecha</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="input-append date" id="datepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+                                    <input  type="text" placeholder="click to show datepicker"  id="example2">
                                 </div>
                             </div>
                         </div>
