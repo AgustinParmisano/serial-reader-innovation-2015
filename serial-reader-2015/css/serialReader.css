@@ -59,6 +59,7 @@
 @media screen and (max-width: 800px) {
     body {
         background-color: white;
+        overflow-x:hidden;
     }
 
     .sider-slider-left a{
@@ -144,3 +145,15 @@
     right: 40%;
     position: fixed;
   }
+
+  #navbar-resp{
+    margin-left: 20%;
+    font-size: 170%;
+  }
+
+  #pesta-actual-dd{
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}

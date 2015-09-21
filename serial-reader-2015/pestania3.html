@@ -44,144 +44,53 @@
 
 <body>
 
-    <div class="sider-slider-left">
-        <a href="pestania2.html"><i class="fa fa-angle-double-left fa-4x"></i></a>
-    </div>
-    <div class="sider-slider-right">
-        <a href="pestania4.html"><i class="fa fa-angle-double-right fa-4x"></i></a>
-    </div>
-
     <div id="wrapper">
 
         <!-- Navigation -->
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" >
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Panel de Control</a>
-                <h3 class="titulo-pesta">Pestaña 3</h3>
-            </div>
             <!-- Top Menu Items -->
-            <!--<ul class="nav navbar-right top-nav">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
-                    <ul class="dropdown-menu message-dropdown">
-                        <li class="message-preview">
-                            <a href="#">
-                                <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-                                    <div class="media-body">
-                                        <h5 class="media-heading">
-                                            <strong>John Smith</strong>
-                                        </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="message-preview">
-                            <a href="#">
-                                <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-                                    <div class="media-body">
-                                        <h5 class="media-heading">
-                                            <strong>John Smith</strong>
-                                        </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="message-preview">
-                            <a href="#">
-                                <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-                                    <div class="media-body">
-                                        <h5 class="media-heading">
-                                            <strong>John Smith</strong>
-                                        </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="message-footer">
-                            <a href="#">Read All New Messages</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
-                    <ul class="dropdown-menu alert-dropdown">
-                        <li>
-                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">View All</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>-->
+            <ul class="nav navbar-right top-nav" id="navbar-resp">
+                    <li class="dropdown">
+                        <a href="pestania2.html"><i class="fa fa-angle-double-left fa-2x"></i></a>
+                    </li>
+                    <li class="dropdown" id="pesta-actual-dd">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i></i> Pestaña 3 <b class="caret"></b></a>
+                        <ul class="dropdown-menu alert-dropdown">
+                            <li>
+                                <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Pestaña 1</a>
+                            </li>
+                            <li>
+                                <a href="pestania2.html"><i class="fa fa-fw fa-bar-chart-o"></i> Pestaña 2</a>
+                            </li>
+                            <li class="active">
+                                <a href="pestania3.html"><i class="fa fa-fw fa-table"></i> Pestaña 3</a>
+                            </li>
+                            <li>
+                                <a href="pestania4.html"><i class="fa fa-fw fa-edit"></i> Pestaña 4</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="pestania5.html"><i class="fa fa-fw fa-desktop"></i> Ayuda</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="pestania4.html"><i class="fa fa-angle-double-right fa-2x"></i></a>
+                    </li>
+            </ul>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <!--<div class="collapse navbar-collapse navbar-ex1-collapse">-->
-            <div class="tabbable">
+            <div class="tabbable" id="nav-bar-full">
                 <!--<ul class="nav navbar-nav side-nav">-->
                 <ul class="nav navbar-nav ">
-                    <li>
+                    <li class="active">
                         <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Pestaña 1</a>
                     </li>
                     <li>
                         <a href="pestania2.html"><i class="fa fa-fw fa-bar-chart-o"></i> Pestaña 2</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="pestania3.html"><i class="fa fa-fw fa-table"></i> Pestaña 3</a>
                     </li>
                     <li>
@@ -208,6 +117,7 @@
             </div>
             <!-- /.navbar-collapse -->
         </nav>
+
         <div id="page-wrapper">
 
             <div class="container-fluid">
